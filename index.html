@@ -5,14 +5,38 @@
 <title>Genesis One Mining</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
+/* ---------- GLOBAL ---------- */
 html,body{margin:0;height:100%;font-family:system-ui,Roboto,Arial,sans-serif;color:#fff}
-.hero{position:relative;height:100vh;background:url('https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed}
+
+/* ---------- HERO ---------- */
+.hero{
+    position:relative;height:100vh;
+    /* replace the file name below with the one you upload */
+    background:url('mining-log-bg.jpg') center/cover no-repeat fixed;
+}
 .overlay{position:absolute;inset:0;background:rgba(0,0,0,.55)}
-.content{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 2rem}
-h1{font-size:clamp(2rem,4vw,3.5rem);line-height:1.25}
-.cta{margin-top:2rem;padding:1rem 2.5rem;font-size:1.25rem;border:2px solid #f7931a;background:#f7931a;color:#000;border-radius:9999px;text-decoration:none;transition:.2s}
+.content{
+    position:relative;z-index:2;height:100%;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;padding:0 2rem;
+}
+h1{
+    font-size:clamp(2rem,4vw,3.5rem);
+    line-height:1.25;margin:0;
+}
+h2{
+    font-size:clamp(1.1rem,3vw,2rem);
+    font-weight:400;margin:1rem 0 0;
+}
+
+/* ---------- CALL-TO-ACTION ---------- */
+.cta{
+    margin-top:2.5rem;padding:1rem 2.5rem;
+    font-size:1.25rem;border:2px solid #f7931a;
+    background:#f7931a;color:#000;border-radius:9999px;
+    text-decoration:none;transition:.2s;
+}
 .cta:hover{background:#fff;color:#f7931a}
-.foreground{width:200px;margin-top:2rem;filter:drop-shadow(0 4px 8px rgba(0,0,0,.6))}
 @media(max-width:600px){.cta{font-size:1rem}}
 </style>
 </head>
@@ -20,9 +44,15 @@ h1{font-size:clamp(2rem,4vw,3.5rem);line-height:1.25}
 <div class="hero">
   <div class="overlay"></div>
   <div class="content">
-      <h1>“A palm-sized device. A global vault.<br><em>Will you hear the click?</em>”</h1>
-      <a class="cta" href="https://forms.gle/XtL3tQsRP5UeReyX8" target="_blank" rel="noopener">Claim&nbsp;Your&nbsp;Miner&nbsp;›</a>
-      <img class="foreground" src="https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=500&q=80" alt="Compact Bitcoin miner">
+      <!-- ENGLISH HEADLINE -->
+      <h1>A&nbsp;Palm-sized&nbsp;Device.<br>The&nbsp;New&nbsp;Digital&nbsp;Gold.<br>Live&nbsp;Life&nbsp;with&nbsp;No&nbsp;Regrets.</h1>
+      <!-- KOREAN TRANSLATION -->
+      <h2>손바닥만 한&nbsp;장치.<br>새로운&nbsp;디지털&nbsp;골드.<br>후회&nbsp;없는&nbsp;삶을.</h2>
+
+      <!-- CALL-TO-ACTION BUTTON -->
+      <a class="cta" href="https://forms.gle/XtL3tQsRP5UeReyX8" target="_blank" rel="noopener">
+          Click&nbsp;to&nbsp;Learn&nbsp;More&nbsp;›
+      </a>
   </div>
 </div>
 </body>
